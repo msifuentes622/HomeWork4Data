@@ -11,7 +11,7 @@ public class ArrayQueueDriver {
 
         //runQ1_PrintQueue();
         //runQ2_CallCenterQueue();
-        //runQ3_ThemeParkRideLine();
+        runQ3_ThemeParkRideLine();
         //runQ4_CustomerServiceTickets();
         //runQ5_TaskSchedulingQueue();
         //runQ6_CheckoutLine();
