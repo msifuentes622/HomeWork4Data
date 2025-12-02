@@ -11,9 +11,9 @@ public class CSLinkedListDriver {
         // TODO: Uncomment EXACTLY ONE of the following lines,
         // then implement that method below.
 
-        runLL1_Playlist();
+        //runLL1_Playlist();
         //runLL2_TodoList();
-        //runLL3_CourseWaitlist();
+        runLL3_CourseWaitlist();
         //runLL4_TextEditorLines();
         //runLL5_RecentlyContacted();
         //runLL6_ShoppingListAddAfter();
@@ -27,17 +27,50 @@ public class CSLinkedListDriver {
     private static void runLL1_Playlist() {
         //TODO: Implement task LL1 here.
         // See the assignment handout for the scenario description.
+        CSLinkedList<String> playlist = new CSLinkedList<>();
+        playlist.addLast("a");
+        System.out.println(playlist);
+        playlist.addLast("b");
+        System.out.println(playlist);
+        playlist.addLast("c");
+        System.out.println(playlist);
+        playlist.addLast("d");
+        System.out.println(playlist);
+        playlist.addFirst("e");
+        System.out.println(playlist);
+        playlist.remove(3);
+        System.out.println(playlist);
+
     }
 
     //LL2 – To-Do List with Priorities
     private static void runLL2_TodoList() {
         // TODO: Implement task LL2 here.
+        /*
+        this is a to do list that has order when asked to throw the trash away you are given a task
+        to clean your room first so you can throw that trash too at the same time
+        in this program we use the add last for the todo list then add in in index 0
+        then remove once done
+         */
+        CSLinkedList<String> ToDo = new CSLinkedList<>();
+        ToDo.addLast("Throw trash");
+        System.out.println(ToDo);
+        ToDo.add( 0, "clean room");
+        System.out.println(ToDo);
+        ToDo.remove(0);
+        System.out.println(ToDo);
     }
 
     // LL3 – Course Waitlist (No Duplicates)
     private static void runLL3_CourseWaitlist() {
         // TODO: Implement task LL3 here.
         // You may add a helper method addIfAbsent(E item) to CSLinkedList if needed.
+        CSLinkedList<String> Waitlist = new CSLinkedList<>();
+        Waitlist.addLast("kelly");
+        Waitlist.addLast("tommy");
+        Waitlist.addLast("kelly");
+        Waitlist.addLast("tommy");
+        System.out.println(Waitlist);
     }
 
     // LL4 – Text Editor Line Manager

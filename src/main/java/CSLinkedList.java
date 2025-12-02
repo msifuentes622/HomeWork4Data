@@ -113,6 +113,17 @@ public class CSLinkedList<E> extends AbstractList<E> {
     modCount++;
   }
 
+  public boolean addIfAbsent(E item) {
+    Node<E> n = new Node<>(item, null);
+    if (size == 0) {
+      head.next = n;
+      tail = n;
+      return true;
+    }
+
+      return false;
+  }
+
   @Override
   public Iterator<E> iterator() {
     return new Itr();
