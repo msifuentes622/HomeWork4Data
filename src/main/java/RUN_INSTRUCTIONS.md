@@ -1,4 +1,4 @@
-.c# How to Run the Assignment Code
+.c./# How to Run the Assignment Code
 
 This project includes two helper scripts:
 
