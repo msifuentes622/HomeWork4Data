@@ -114,14 +114,23 @@ public class CSLinkedList<E> extends AbstractList<E> {
   }
 
   public boolean addIfAbsent(E item) {
-    Node<E> n = new Node<>(item, null);
-    if (size == 0) {
-      head.next = n;
-      tail = n;
-      return true;
-    }
-
+    if  (this.contains(item)) {
       return false;
+    }
+      add(item);
+    return true;
+  }
+
+  public void moveToFront(E item) {
+      addIfAbsent(item);
+      if (this.contains(item)) {
+          remove(item);
+      }
+      addFirst(item);
+  }
+
+  public boolean addAfter(E target, E newItem) {
+
   }
 
   @Override
